@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <templates xml:space="preserve">
    <t t-name="awesome_owl.playground">
-      <Counter />
-      <Counter />
+      <Counter onChange="incrementSum" />
+      <Counter onChange="incrementSum" />
       <Card title="'card 1'" text="cardContent" />
       <Card title="'card 2'" text="escapedCardContent" />
+      <p>The sum is <t t-esc="state.sum" /></p>
     </t>
 </templates>
