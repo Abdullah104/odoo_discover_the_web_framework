@@ -11,7 +11,7 @@ export class TodoList extends Component {
       new TodoModel({
         id: 2,
         description: "write tutorial",
-        isCompleted: false,
+        isCompleted: true,
       }),
       new TodoModel({ id: 3, description: "buy milk", isCompleted: false }),
     ]));
