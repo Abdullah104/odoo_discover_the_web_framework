@@ -2,6 +2,9 @@
 
 <templates xml:space="preserve">
   <t t-name="awesome_owl.todo_list">
-    <TodoItem t-foreach="todos" t-as="todo" t-key="todo.id" todo="todo" />
+    <div class="m-2 p-2 border d-inline-block">
+      <input placeholder="Add a todo" />
+      <TodoItem t-foreach="todos" t-as="todo" t-key="todo.id" todo="todo" />
+    </div>
   </t>
 </templates>
