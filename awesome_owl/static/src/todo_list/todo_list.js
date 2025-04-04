@@ -31,4 +31,6 @@ export class TodoList extends Component {
 
     event.target.value = "";
   };
+
+  toggleState = (todo) => (todo.isCompleted = !todo.isCompleted);
 }
