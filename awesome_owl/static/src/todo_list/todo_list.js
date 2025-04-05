@@ -6,6 +6,8 @@ import { TodoModel } from "./todo_model";
 import { useAutoFocus } from "../utils";
 
 export class TodoList extends Component {
+  idCounter = 1;
+
   static template = "awesome_owl.todo_list";
   static components = { TodoItem };
 
@@ -23,7 +25,7 @@ export class TodoList extends Component {
 
     this.todos.push(
       new TodoModel({
-        id: this.todos.length + 1,
+        id: this.idCounter++,
         description: event.target.value,
         isCompleted: false,
       })
@@ -33,4 +35,10 @@ export class TodoList extends Component {
   };
 
   toggleState = (todo) => (todo.isCompleted = !todo.isCompleted);
+
+  removeTodo = (todo) =>
+    this.todos.splice(
+      this.todos.findIndex((element) => element.id === todo.id),
+      1
+    );
 }
