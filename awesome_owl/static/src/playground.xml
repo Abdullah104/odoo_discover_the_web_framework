@@ -8,8 +8,12 @@
          <p>The sum is <t t-esc="state.sum" /></p>
       </div>
       <div>
-         <Card title="'card 1'" text="cardContent" />
-         <Card title="'card 2'" text="escapedCardContent" />
+         <Card title="'card 1'">
+            <h1>Hi</h1>
+         </Card>
+         <Card title="'card 2'">
+            <h6>Hi too</h6>
+         </Card>
       </div>
       <TodoList />
     </t>
