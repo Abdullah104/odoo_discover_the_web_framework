@@ -1,8 +1,7 @@
-import { Component, onWillStart } from "@odoo/owl";
+import { Component, useState } from "@odoo/owl";
 import { registry } from "@web/core/registry";
 import { Layout } from "@web/search/layout";
 import { useService } from "@web/core/utils/hooks";
-import { rpc } from "@web/core/network/rpc";
 
 import { DashboardItem } from "./dashboard_item";
 
@@ -15,10 +14,7 @@ class AwesomeDashboard extends Component {
 
     this.action = useService("action");
 
-    onWillStart(async () => {
-      this.statistics = await rpc("/awesome_dashboard/statistics");
-      console.log(this.statistics);
-    });
+    this.statistics = useState(useService("awesome_dashboard.statistics"));
   };
 
   openCustomersKanban = () => this.action.doAction("base.action_partner_form");
