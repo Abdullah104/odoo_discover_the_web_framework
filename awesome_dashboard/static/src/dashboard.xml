@@ -9,24 +9,22 @@
             </t>
             <div t-if="statistics.isReady" class="d-flex flex-wrap">
                 <DashboardItem>
-                    <h4>Average amount of t-shirt by order this month</h4>
-                    <h2 class="text-center" style="color: green;"><t t-esc="statistics.average_quantity" /></h2>
+                    <NumberCard title="'Average amount of t-shirt by order this month'" value="statistics.average_quantity" />
                 </DashboardItem>
                 <DashboardItem>
-                    <h4>Average time for an order to go from 'new' to 'sent' or 'cancelled'</h4>
-                    <h2 class="text-center" style="color: green;"><t t-esc="statistics.average_time" /></h2>
+                    <NumberCard title="'Average time for an order to go from \'new\' to \'sent\' or \'cancelled\''" value="statistics.average_time" />
                 </DashboardItem>
                 <DashboardItem>
-                    <h4>Number of new orders this month</h4>
-                    <h2 class="text-center" style="color: green;"><t t-esc="statistics.nb_cancelled_orders" /></h2>
+                    <NumberCard title="'Number of new orders this month'" value="statistics.nb_cancelled_orders" />
                 </DashboardItem>
                 <DashboardItem>
-                    <h4>Number of cancelled orders this month</h4>
-                    <h2 class="text-center" style="color: green;"><t t-esc="statistics.nb_new_orders" /></h2>
+                    <NumberCard title="'Number of cancelled orders this month'" value="statistics.nb_new_orders" />
                 </DashboardItem>
                 <DashboardItem>
-                    <h4>Total amount of orders this month</h4>
-                    <h2 class="text-center" style="color: green;"><t t-esc="statistics.total_amount" /></h2>
+                    <NumberCard title="'Total amount of orders this month'" value="statistics.total_amount" />
+                </DashboardItem>
+                <DashboardItem size="2">
+                    <PieChartCard title="'Shirt orders by size'" values="statistics.orders_by_size" />
                 </DashboardItem>
             </div>
         </Layout>
