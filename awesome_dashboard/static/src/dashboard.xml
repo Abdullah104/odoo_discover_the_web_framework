@@ -7,10 +7,27 @@
                 <button class="btn btn-primary" t-on-click="openCustomersKanban">Customers</button>
                 <button class="btn btn-primary" t-on-click="openLeads">Leads</button>
             </t>
-            <div class="d-flex">
-                <DashboardItem>some content</DashboardItem>
-                <DashboardItem size="2">I love milk</DashboardItem>
-                <DashboardItem>some content</DashboardItem>
+            <div class="d-flex flex-wrap">
+                <DashboardItem>
+                    <h4>Average amount of t-shirt by order this month</h4>
+                    <h2 class="text-center" style="color: green;"><t t-esc="statistics.average_quantity" /></h2>
+                </DashboardItem>
+                <DashboardItem>
+                    <h4>Average time for an order to go from 'new' to 'sent' or 'cancelled'</h4>
+                    <h2 class="text-center" style="color: green;"><t t-esc="statistics.average_time" /></h2>
+                </DashboardItem>
+                <DashboardItem>
+                    <h4>Number of new orders this month</h4>
+                    <h2 class="text-center" style="color: green;"><t t-esc="statistics.nb_cancelled_orders" /></h2>
+                </DashboardItem>
+                <DashboardItem>
+                    <h4>Number of cancelled orders this month</h4>
+                    <h2 class="text-center" style="color: green;"><t t-esc="statistics.nb_new_orders" /></h2>
+                </DashboardItem>
+                <DashboardItem>
+                    <h4>Total amount of orders this month</h4>
+                    <h2 class="text-center" style="color: green;"><t t-esc="statistics.total_amount" /></h2>
+                </DashboardItem>
             </div>
         </Layout>
     </t>
