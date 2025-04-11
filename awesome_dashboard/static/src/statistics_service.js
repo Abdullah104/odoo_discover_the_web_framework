@@ -1,9 +1,10 @@
 import { registry } from "@web/core/registry";
 import { rpc } from "@web/core/network/rpc";
+import { reactive } from "@odoo/owl";
 
 export const statisticsService = {
   start() {
-    const statistics = { isReady: false };
+    const statistics = reactive({ isReady: false });
 
     async function loadData() {
       Object.assign(statistics, await rpc("/awesome_dashboard/statistics"), {
@@ -12,6 +13,7 @@ export const statisticsService = {
     }
 
     loadData();
+    setInterval(loadData, 10 * 60 * 1000);
 
     return statistics;
   },
