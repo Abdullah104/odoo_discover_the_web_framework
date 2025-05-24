@@ -44,12 +44,11 @@ class AwesomeDashboard extends Component {
     });
 
   openConfigurations = () => {
-    ConfigurationsDialog,
-      {
-        items: this.items,
-        disabledItems: this.state.disabledItems,
-        onUpdateConfiguration: this.updateConfiguration,
-      };
+    this.dialog.add(ConfigurationsDialog, {
+      items: this.items,
+      disabledItems: this.state.disabledItems,
+      onUpdateConfiguration: this.updateConfiguration,
+    });
   };
 
   updateConfiguration = (newDisabledItems) =>
