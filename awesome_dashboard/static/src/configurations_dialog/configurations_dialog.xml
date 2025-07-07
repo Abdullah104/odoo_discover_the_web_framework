@@ -2,7 +2,9 @@
 
 <templates xml:space="preserve">
   <t t-name="awesome_dashboard.ConfigurationsDialog">
-    <Dialog title="'Dashboard items configuration'">
+    <t t-set="dialogTitle">Dashboard items configuration</t>
+    
+    <Dialog title="dialogTitle">
         Which cards do you wish to see?
         <t t-foreach="items" t-as="item" t-key="item.id">
           <CheckBox value="item.enabled" onChange="(ev) => this.onChange(ev, item)">

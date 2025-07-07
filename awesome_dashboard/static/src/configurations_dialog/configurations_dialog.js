@@ -2,6 +2,7 @@ import { Component, useState } from "@odoo/owl";
 import { Dialog } from "@web/core/dialog/dialog";
 import { CheckBox } from "@web/core/checkbox/checkbox";
 import { browser } from "@web/core/browser/browser";
+import { _t } from "@web/core/l10n/translation";
 
 export class ConfigurationsDialog extends Component {
   static template = "awesome_dashboard.ConfigurationsDialog";

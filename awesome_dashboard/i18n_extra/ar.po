@@ -1,0 +1,14 @@
+#. module: awesome_dashboard
+#: model:ir.ui.menu,name:awesome_dashboard.menu_root
+msgid "Awesome Dashboard"
+msgstr "لوحة تحكم رائعة"
+
+#. module: awesome_dashboard
+#: model:ir.module.module,summary:awesome_dashboard.module_awesome_dashboard
+msgid "Starting module"
+msgstr "تطبيق ابتدائي ل \"Discover the JS framework, chapter 2: Build a dashboard\""
+
+#. module: awesome_dashboard
+#: model:ir.module.module,description:awesome_dashboard.module_awesome_dashboard
+msgid "Starting module"
+msgstr "تطبيق ابتدائي ل \"Discover the JS framework, chapter 2: Build a dashboard\""

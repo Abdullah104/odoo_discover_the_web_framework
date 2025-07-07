@@ -1,0 +1,95 @@
+#. module: awesome_dashboard
+#: model:ir.ui.menu,name:awesome_dashboard.menu_root
+msgid "Awesome Dashboard"
+msgstr "لوحة تحكم رائعة"
+
+#. module: awesome_dashboard
+#: model:ir.module.module,summary:awesome_dashboard.module_awesome_dashboard
+msgid "Starting module"
+msgstr "تطبيق ابتدائي ل \"Discover the JS framework, chapter 2: Build a dashboard\""
+
+#. module: awesome_dashboard
+#: model:ir.module.module,description:awesome_dashboard.module_awesome_dashboard
+msgid "Starting module"
+msgstr "تطبيق ابتدائي ل \"Discover the JS framework, chapter 2: Build a dashboard\""
+
+#. module: awesome_dashboard
+#: model:ir.ui.menu,name:awesome_dashboard.menu_root
+msgid "Dashboard"
+msgstr "لوحة التحكم"
+
+#. module: awesome_dashboard
+#: code:addons/awesome_dashboard/static/src/dashboard/dashboard.xml:0
+msgid "Customers"
+msgstr "العملاء"
+
+#. module: awesome_dashboard
+#: code:addons/awesome_dashboard/static/src/dashboard/dashboard.xml:0
+msgid "Leads"
+msgstr "العملاء المحتملون"
+
+#. module: awesome_dashboard
+#. odoo-javascript
+#: code:addons/awesome_dashboard/static/src/configurations_dialog/configurations_dialog.xml:0
+msgid "Dashboard items configuration"
+msgstr "إعدادات بطاقات لوحة التحكم"
+
+#. module: awesome_dashboard
+#: code:addons/awesome_dashboard/static/src/configurations_dialog/configurations_dialog.xml:0
+msgid "Which cards do you wish to see?"
+msgstr "ما البطاقات التي تريد رؤيتها؟"
+
+#. module: awesome_dashboard
+#: code:addons/awesome_dashboard/static/src/dashboard/dashboard_items.js
+msgid "Average amount of t-shirt"
+msgstr "متوسط عدد التيشيرتات"
+
+#. module: awesome_dashboard
+#: code:addons/awesome_dashboard/static/src/dashboard/dashboard_items.js
+msgid "Average time for an order"
+msgstr "متوسط وقت الطلب"
+
+#. module: awesome_dashboard
+#: code:addons/awesome_dashboard/static/src/dashboard/dashboard_items.js
+msgid "New orders this month"
+msgstr "الطلبات الجديدة لهذا الشهر"
+
+#. module: awesome_dashboard
+#: code:addons/awesome_dashboard/static/src/dashboard/dashboard_items.js
+msgid "Cancelled orders this month"
+msgstr "الطلبات الملغاة لهذا الشهر"
+
+#. module: awesome_dashboard
+#: code:addons/awesome_dashboard/static/src/dashboard/dashboard_items.js
+msgid "amount orders this month"
+msgstr "إجمالي طلبات الشهر"
+
+#. module: awesome_dashboard
+#: code:addons/awesome_dashboard/static/src/dashboard/dashboard_items.js
+msgid "Shirt orders by size"
+msgstr "طلبات الشيرتات حسب الحجم"
+
+#. module: awesome_dashboard
+#: code:addons/awesome_dashboard/static/src/dashboard/dashboard_items.js
+msgid "Average amount of t-shirt by order this month"
+msgstr "متوسط عدد التيشيرتات المطلوبة هذا الشهر"
+
+#. module: awesome_dashboard
+#: code:addons/awesome_dashboard/static/src/dashboard/dashboard_items.js
+msgid "Average time for an order to go from 'new' to 'sent' or 'cancelled'"
+msgstr "متوسط وقت الطلب حتى يصبح من 'جديد' إلى 'مرسل' أو 'ملغي'"
+
+#. module: awesome_dashboard
+#: code:addons/awesome_dashboard/static/src/dashboard/dashboard_items.js
+msgid "Number of new orders this month"
+msgstr "عدد الطلبات الجديدة لهذا الشهر"
+
+#. module: awesome_dashboard
+#: code:addons/awesome_dashboard/static/src/dashboard/dashboard_items.js
+msgid "Number of cancelled orders this month"
+msgstr "عدد الطلبات الملغاة لهذا الشهر"
+
+#. module: awesome_dashboard
+#: code:addons/awesome_dashboard/static/src/dashboard/dashboard_items.js
+msgid "Total amount of new orders this month"
+msgstr "إجمالي عدد الطلبات لهذا الشهر"
